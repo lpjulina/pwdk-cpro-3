@@ -17,13 +17,13 @@ RMSE dan MAPE digunakan untuk mengukur akurasi model, di mana nilai yang lebih k
 
 # Kesimpulan dan Rekomendasi
 Kesimpulan:
-Fitur utama yang mempengaruhi harga apartemen adalah Size(sqf), YearBuilt, HallwayType, dan fasilitas yang ada. Ukuran apartemen adalah faktor paling berpengaruh. Model mencapai MAPE sebesar 18%, menunjukkan akurasi yang cukup baik, meskipun masih bisa ditingkatkan.
+Fitur utama yang mempengaruhi harga apartemen adalah Size(sqf), N_FacilitiesInApt, N_Parkinglot(Basement), YearBuilt, dan HallwayType. Ukuran (Size) apartemen adalah faktor paling berpengaruh. Model mencapai MAPE sebesar 18%, menunjukkan akurasi yang cukup baik, meskipun masih bisa ditingkatkan.
 
 Rekomendasi:
-Pemilik apartemen sebaiknya mempertimbangkan ukuran, tipe apartemen, fasilitas, dan tahun dibangun saat menetapkan harga. Sedangkan untuk meningkatkan model dapat dilakukan:
-- Gunakan teknik lain untuk menangani outlier.
-- Coba model lebih kompleks seperti XGBoost.
-- Tambahkan fitur seperti jumlah kamar atau jarak ke pusat kota untuk prediksi yang lebih baik.
+Pemilik apartemen sebaiknya mempertimbangkan ukuran, tipe apartemen, fasilitas dalam apartemen, dan tahun dibangunnya apartemen saat menetapkan harga jual. Sedangkan untuk meningkatkan model dapat dilakukan:
+- Gunakan teknik lain untuk menangani outlier selain penghapusan, seperti robust.
+- Mencoba model lebih kompleks seperti Gradient Boosting dan XGBoost.
+- Tambahkan fitur seperti jumlah kamar atau ruangan dan jarak ke pusat kota untuk prediksi yang lebih baik.
 
 # Dataset
 Sumber: Dataset Apartment Data
